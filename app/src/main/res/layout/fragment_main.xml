@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment">
+
+    <EditText
+        android:id="@+id/search_field"
+        android:imeOptions="actionSearch"
+        android:hint="Search..."
+        android:layout_margin="12dp"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_sort"
+        android:background="@drawable/bg_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_margin="12dp"
+        android:id="@+id/btn_sort"
+        android:padding="12dp"
+        android:src="@drawable/ic_sort"
+        android:background="@drawable/bg_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <ImageView
+        android:id="@+id/btn_add"
+        android:layout_margin="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
+        android:src="@drawable/baseline_add_24"
+        android:background="@drawable/bg_circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
